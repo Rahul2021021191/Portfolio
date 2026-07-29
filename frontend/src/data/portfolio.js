@@ -111,7 +111,7 @@ export const EXPERIENCE = [
   {
     role: "Performance Marketing Intern",
     company: "Yes2Growth, Gurugram",
-    duration: "June 2026 – Ongoing",
+    duration: "June 2026 – August 2026",
     points: [
       "Managing and optimizing Meta Ads campaigns to improve performance.",
       "Driving results through data-driven targeting, budget allocation, and conversion analysis.",
