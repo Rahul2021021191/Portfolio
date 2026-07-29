@@ -1,0 +1,208 @@
+{
+  "brand_identity": {
+    "name": "Rahul Gupta",
+    "role": "Data Analyst | Business Analyst | MIS Executive",
+    "tagline": "Transforming Data into Actionable Insights.",
+    "theme": "Dark theme with glassmorphism, premium and minimal UI, Apple/Linear aesthetic.",
+    "color_archetype": "Electric & Neon fused with Luxury Depth"
+  },
+  "typography": {
+    "headings": {
+      "family": "Poppins, sans-serif",
+      "instruction": "Use Poppins for all H1-H6 headings. Ensure tracking-tight for larger sizes.",
+      "scales": {
+        "h1": "text-5xl md:text-6xl+ lg:text-7xl font-bold tracking-tighter leading-tight",
+        "h2": "text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight",
+        "h3": "text-2xl md:text-3xl font-medium tracking-tight",
+        "h4": "text-xl font-medium"
+      }
+    },
+    "body": {
+      "family": "Inter, sans-serif",
+      "instruction": "Use Inter for all body text, paragraphs, and functional UI elements.",
+      "scales": {
+        "large": "text-lg md:text-xl leading-relaxed text-slate-300",
+        "base": "text-base leading-relaxed text-slate-400",
+        "small": "text-sm text-slate-400"
+      }
+    },
+    "accents": {
+      "overline": "text-xs md:text-sm font-semibold tracking-[0.2em] uppercase text-blue-400"
+    }
+  },
+  "colors": {
+    "background": {
+      "default": "#0F172A",
+      "surface": "#1E293B",
+      "glass": "rgba(15, 23, 42, 0.6)"
+    },
+    "primary": {
+      "default": "#3B82F6",
+      "hover": "#2563EB",
+      "glow": "rgba(59, 130, 246, 0.5)"
+    },
+    "secondary": {
+      "default": "#8B5CF6",
+      "hover": "#7C3AED"
+    },
+    "accent": {
+      "default": "#06B6D4",
+      "hover": "#0891B2"
+    },
+    "text": {
+      "primary": "#F8FAFC",
+      "secondary": "#94A3B8",
+      "muted": "#64748B"
+    },
+    "gradients": {
+      "brand": "bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500",
+      "text": "bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400",
+      "animated_bg": "bg-[linear-gradient(45deg,#3B82F6,#8B5CF6,#06B6D4,#0F172A)] bg-[length:400%_400%] animate-gradient"
+    },
+    "borders": {
+      "glass": "rgba(255, 255, 255, 0.1)"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "card": "bg-slate-900/40 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.12)]",
+      "header": "bg-slate-900/70 backdrop-blur-2xl border-b border-white/5",
+      "dropdown": "bg-slate-800/90 backdrop-blur-xl border border-white/10"
+    },
+    "shadows": {
+      "glow": "shadow-[0_0_20px_rgba(59,130,246,0.3)]",
+      "card_hover": "hover:shadow-[0_8px_30px_rgba(139,92,246,0.2)]"
+    }
+  },
+  "layouts": {
+    "spacing": {
+      "section_y": "py-24 md:py-32",
+      "container": "max-w-7xl mx-auto px-6 md:px-12",
+      "gap": "gap-8 md:gap-12"
+    },
+    "grids": {
+      "bento": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6 md:gap-8",
+      "cards": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "relative inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white transition-all duration-300 rounded-full bg-blue-600 hover:bg-blue-500 hover:scale-105 hover:shadow-glow focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-slate-900",
+      "secondary": "relative inline-flex items-center justify-center px-8 py-4 text-sm font-semibold text-white transition-all duration-300 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:scale-105 backdrop-blur-md",
+      "magnetic": "Wrap buttons in Framer Motion magnetic wrapper to slightly pull towards cursor."
+    },
+    "cards": {
+      "base": "rounded-3xl p-8 bg-slate-900/40 backdrop-blur-xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:border-white/20 overflow-hidden relative group"
+    },
+    "inputs": {
+      "base": "w-full px-4 py-3 bg-slate-800/50 border border-white/10 rounded-xl focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all text-white placeholder-slate-400"
+    }
+  },
+  "motion": {
+    "page_transitions": "Fade in and slight slide up (y: 20 -> 0) on page mount using Framer Motion.",
+    "scroll_reveal": "Elements should fade in and slide up when scrolling into view with a stagger effect (viewport={{ once: true, margin: '-100px' }}).",
+    "hover_effects": "Cards tilt slightly, borders glow, buttons scale up by 1.05.",
+    "parallax": "Hero section text and background shapes move at different speeds on scroll.",
+    "kinetic_typography": "Masked line-by-line reveal for hero headings (overflow-hidden, child animates y: 100% -> 0).",
+    "cursor": "Custom glowing dot cursor that follows mouse, expands over interactive elements.",
+    "magnetic": "CTAs and header links attract cursor slightly."
+  },
+  "sections": {
+    "hero": {
+      "layout": "min-h-screen flex items-center justify-center relative overflow-hidden",
+      "visuals": "Animated gradient background (dark base with subtle moving blue/purple/cyan blooms), floating particles (Framer motion or tsparticles), custom grid overlay.",
+      "content": "Kinetic text for Name and Tagline. Typing effect (using react-simple-typewriter or framer-motion) for 'I analyze data, build dashboards, automate workflows...'.",
+      "actions": "3 Magnetic Buttons: View Projects (Primary), Download Resume (Secondary), Contact Me (Secondary).",
+      "scroll_indicator": "Mouse or chevron icon at bottom bouncing to indicate scroll."
+    },
+    "about_me": {
+      "layout": "Bento Grid or Asymmetrical 2-column layout.",
+      "content": "Manifesto style, numbered chapters (01. Background, 02. Vision). Mention BCA, Data Analytics, BI/Automation/AI.",
+      "visuals": "Slow editorial marquee passing through background with terms like 'DATA DRIVEN', 'INSIGHTS', 'AUTOMATION'."
+    },
+    "skills": {
+      "layout": "Grid of categories (Programming, Analytics, Database, Visualization, Tools, Soft Skills).",
+      "content": "Animated progress bars for technical skills, floating 3D-like icons for tools.",
+      "style": "Glassmorphism cards for each category."
+    },
+    "experience": {
+      "layout": "Vertical timeline with glowing dots.",
+      "content": "Business Analyst Intern, Data Analytics Intern (use placeholders for details). Reveal on scroll."
+    },
+    "projects": {
+      "layout": "Grid of 2x2 or asymmetrical layout.",
+      "interaction": "Card tilt effect on hover, image scales up.",
+      "cards": [
+        {
+          "title": "IPL Data Analysis Dashboard",
+          "image": "https://images.unsplash.com/photo-1750716413756-b66624b64ce4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHw0fHxjcmlja2V0JTIwc3RhZGl1bSUyMG5pZ2h0fGVufDB8fHx8MTc4NTM0NjAyMnww&ixlib=rb-4.1.0&q=85",
+          "links": ["Live Demo", "GitHub"]
+        },
+        {
+          "title": "Blinkit Sales Dashboard",
+          "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNzl8MHwxfHNlYXJjaHwyfHxlY29tbWVyY2UlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzg1MzQ2MDIyfDA&ixlib=rb-4.1.0&q=85",
+          "links": ["Live Demo", "GitHub"]
+        },
+        {
+          "title": "Google Ads Automation",
+          "image": "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwyfHxtYXJrZXRpbmclMjBhbmFseXRpY3MlMjBncmFwaHxlbnwwfHx8fDE3ODUzNDYwMjJ8MA&ixlib=rb-4.1.0&q=85",
+          "links": ["Live Demo", "GitHub"]
+        },
+        {
+          "title": "AI Video Editing Workflow",
+          "image": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwxfHx2aWRlbyUyMGVkaXRpbmclMjBzdHVkaW98ZW58MHx8fHwxNzg1MzQ2MDIyfDA&ixlib=rb-4.1.0&q=85",
+          "links": ["Live Demo", "GitHub"]
+        }
+      ]
+    },
+    "certifications": {
+      "layout": "Carousel or compact grid.",
+      "content": "Cisco CyberOps Professional, IIT Kanpur Foundation of Cloud IoT Edge ML, Power BI Certification, Python Programming Certification."
+    },
+    "education": {
+      "layout": "Minimalist horizontal or vertical timeline for BCA.",
+      "style": "Highlight the current/latest status."
+    },
+    "achievements": {
+      "layout": "Grid of 4 counters.",
+      "content": "Projects Completed, Certifications, Internships, Technologies Learned.",
+      "interaction": "Use react-countup to animate numbers from 0 when visible."
+    },
+    "contact": {
+      "layout": "2-column layout (Contact Info & Socials vs Form).",
+      "form": "Glassmorphism panel, floating labels, validation, glowing submit button.",
+      "socials": "GitHub, LinkedIn, Email icons with hover glow."
+    }
+  },
+  "required_libraries": [
+    "framer-motion",
+    "@studio-freight/react-lenis",
+    "lucide-react",
+    "react-fast-marquee",
+    "react-countup",
+    "react-simple-typewriter",
+    "react-parallax-tilt"
+  ],
+  "accessibility": {
+    "contrast": "Ensure APCA contrast standards. Dark text on bright gradients, white text on dark backgrounds.",
+    "focus": "All interactive elements must have visible focus rings (focus-visible:ring-2).",
+    "aria": "Use aria-labels for icon-only buttons (like social links)."
+  },
+  "instructions_to_main_agent": [
+    "You MUST implement Lenis for smooth momentum scrolling.",
+    "Wrap the entire application or root layout in a CustomCursor provider and Lenis provider.",
+    "For the Dark/Light toggle, default to Dark mode but implement the logic using standard Tailwind dark mode class strategy.",
+    "Do not use generic centered layouts. Use asymmetrical grids and negative space aggressively.",
+    "Use framer-motion extensively for scroll reveals and layout transitions.",
+    "Ensure every form field and button has a unique `data-testid` attribute (e.g., `data-testid=\"contact-submit-button\"`).",
+    "Implement the navbar as a sticky header with glassmorphism, active section highlighting using IntersectionObserver, and ensure it does not use a fully transparent background."
+  ],
+  "universal_guidelines_for_main_agent": {
+    "avoid_ai_slop": "Do not produce generic, centered, flat designs. Create depth through layered design elements with z-index hierarchy.",
+    "spacing": "Use 2-3x more spacing than feels comfortable. Apply generous paddings like p-8, p-12.",
+    "transitions": "NEVER use `transition: all`. Target specific properties like `transition-colors`, `transition-transform`.",
+    "alignment": "DO NOT center align the entire app container. Left-align dense content.",
+    "icons": "Use lucide-react. Do NOT use emojis as UI icons.",
+    "testing": "All interactive and key informational elements MUST include a `data-testid` attribute (kebab-case, role-based)."
+  }
+}
