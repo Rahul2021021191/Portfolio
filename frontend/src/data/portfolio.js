@@ -13,10 +13,13 @@ export const PROFILE = {
     "I turn raw data into business insights.",
   ],
   resumeUrl: "/Rahul_Gupta_Resume.pdf",
-  email: "rahul.gupta@example.com",
+  photo: "/rahul-photo.jpg",
+  location: "Gorakhpur, Uttar Pradesh, India",
+  phone: "+91 89576 01598",
+  email: "rahul912046@gmail.com",
   socials: {
-    github: "https://github.com/rahulgupta",
-    linkedin: "https://linkedin.com/in/rahulgupta",
+    github: "https://github.com/Rahul2021021191",
+    linkedin: "https://www.linkedin.com/in/rahul-gupta-7b808a230/",
   },
 };
 
@@ -25,12 +28,12 @@ export const ABOUT = {
     {
       no: "01",
       title: "Background",
-      body: "I'm a BCA student and a data analytics enthusiast who loves finding the story hidden inside spreadsheets and databases. From SQL queries to polished Power BI dashboards, I enjoy every step of the analytics journey.",
+      body: "I'm a BCA student at GL Bajaj Institute of Management, Greater Noida (Class of 2027, 75.79%), and a data analytics enthusiast who loves finding the story hidden inside spreadsheets and databases. From SQL queries to polished Power BI dashboards, I enjoy every step of the analytics journey.",
     },
     {
       no: "02",
       title: "Approach",
-      body: "I'm passionate about solving real business problems with data — cutting through noise to surface the metrics that actually drive decisions, and automating the repetitive work in between.",
+      body: "I'm passionate about solving real business problems with data — cleaning messy datasets, running exploratory analysis, and building dashboards with DAX & Power Query that surface the metrics teams actually act on.",
     },
     {
       no: "03",
@@ -48,43 +51,48 @@ export const SKILLS = [
     items: [
       { name: "Python", level: 85 },
       { name: "SQL", level: 90 },
-      { name: "JavaScript", level: 70 },
+      { name: "Java", level: 72 },
+      { name: "C / C++", level: 70 },
+      { name: "JavaScript", level: 72 },
     ],
   },
   {
-    category: "Analytics",
+    category: "Analytics & BI",
     icon: "BarChart3",
     items: [
       { name: "Power BI", level: 92 },
-      { name: "Excel", level: 90 },
-      { name: "Google Sheets", level: 88 },
-      { name: "DAX", level: 80 },
-      { name: "Power Query", level: 82 },
+      { name: "MS Excel", level: 90 },
+      { name: "Tableau", level: 78 },
+      { name: "DAX", level: 82 },
+      { name: "Power Query", level: 85 },
     ],
   },
   {
     category: "Database",
     icon: "Database",
-    items: [{ name: "MySQL", level: 85 }],
-  },
-  {
-    category: "Visualization",
-    icon: "PieChart",
     items: [
-      { name: "Power BI", level: 92 },
-      { name: "Charts", level: 88 },
-      { name: "KPI Dashboards", level: 85 },
+      { name: "MySQL", level: 85 },
+      { name: "MongoDB", level: 72 },
     ],
   },
   {
-    category: "Tools",
+    category: "Data Skills",
+    icon: "PieChart",
+    items: [
+      { name: "Data Cleaning", level: 90 },
+      { name: "Exploratory Data Analysis", level: 85 },
+      { name: "Data Modelling", level: 80 },
+      { name: "KPI Tracking", level: 88 },
+    ],
+  },
+  {
+    category: "Web & Tools",
     icon: "Wrench",
     items: [
-      { name: "Git", level: 78 },
-      { name: "GitHub", level: 80 },
+      { name: "HTML & CSS", level: 82 },
+      { name: "Git & GitHub", level: 80 },
       { name: "VS Code", level: 88 },
-      { name: "Google Ads", level: 75 },
-      { name: "Google Analytics", level: 78 },
+      { name: "Meta / Google Ads", level: 75 },
     ],
   },
   {
@@ -101,82 +109,96 @@ export const SKILLS = [
 
 export const EXPERIENCE = [
   {
-    role: "Business Analyst Intern",
-    company: "Company Name",
-    duration: "Duration",
+    role: "Performance Marketing Intern",
+    company: "Yes2Growth, Gurugram",
+    duration: "June 2026 – Ongoing",
     points: [
-      "Translated business requirements into analytical dashboards and reports.",
-      "Partnered with stakeholders to define KPIs and success metrics.",
+      "Managing and optimizing Meta Ads campaigns to improve performance.",
+      "Driving results through data-driven targeting, budget allocation, and conversion analysis.",
     ],
   },
   {
-    role: "Data Analytics Intern",
-    company: "Company Name",
-    duration: "Duration",
+    role: "Web Development Intern",
+    company: "Codsoft, Kolkata",
+    duration: "July 2023 – August 2023",
     points: [
-      "Cleaned, modeled, and visualized data to support decision-making.",
-      "Automated recurring reporting workflows to save manual effort.",
+      "Built responsive websites using HTML, CSS, and JavaScript.",
+      "Applied modern web development practices across multiple projects.",
     ],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "IPL Data Analysis Dashboard",
+    title: "IPL Stats Dashboard (2008–2025)",
     description:
-      "Interactive Power BI dashboard analyzing IPL data from 2008-2025 including player statistics, team performance, and match insights.",
-    tech: ["Power BI", "DAX", "Excel"],
+      "Cleaned and transformed 15,000+ IPL records using Power Query — standardising team/player names, removing duplicates, and shaping data into structured tables to power an interactive dashboard with player, team and match insights.",
+    tech: ["Power BI", "Power Query", "DAX", "Excel"],
     image:
       "https://images.unsplash.com/photo-1750716413756-b66624b64ce4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHw0fHxjcmlja2V0JTIwc3RhZGl1bSUyMG5pZ2h0fGVufDB8fHx8MTc4NTM0NjAyMnww&ixlib=rb-4.1.0&q=85",
     demo: "#",
-    github: "#",
+    github: "https://github.com/Rahul2021021191",
   },
   {
-    title: "Blinkit Sales Dashboard",
+    title: "Blinkit Sales Data Analysis",
     description:
-      "Sales analysis dashboard with KPIs, category performance, revenue analysis, customer insights and interactive visualizations.",
+      "Developed an interactive Blinkit Sales Dashboard in Power BI analysing key metrics including total revenue, items sold, average customer revenue, category performance, and average rating.",
     tech: ["Power BI", "DAX", "Excel"],
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNzl8MHwxfHNlYXJjaHwyfHxlY29tbWVyY2UlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzg1MzQ2MDIyfDA&ixlib=rb-4.1.0&q=85",
     demo: "#",
-    github: "#",
+    github: "https://github.com/Rahul2021021191",
   },
   {
-    title: "Google Ads Automation",
+    title: "Sales & Marketing Analytics",
     description:
-      "Automated Google Ads reporting using Apps Script to fetch campaign performance into Google Sheets.",
-    tech: ["Google Apps Script", "Google Sheets", "Google Ads API"],
+      "Analysed Meta Ads campaign performance during my marketing internship — tracking conversions, budget efficiency, and audience targeting to guide data-driven optimisation decisions.",
+    tech: ["Excel", "Meta Ads", "KPI Tracking"],
     image:
       "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwyfHxtYXJrZXRpbmclMjBhbmFseXRpY3MlMjBncmFwaHxlbnwwfHx8fDE3ODUzNDYwMjJ8MA&ixlib=rb-4.1.0&q=85",
     demo: "#",
-    github: "#",
+    github: "https://github.com/Rahul2021021191",
   },
   {
-    title: "AI Video Editing Workflow",
+    title: "Responsive Web Projects",
     description:
-      "Automated video editing workflow using Whisper for speech recognition and AI-based scene matching.",
-    tech: ["Python", "Whisper", "FFmpeg"],
+      "A collection of responsive websites built during my web development internship using HTML, CSS, and JavaScript, focused on clean layouts and modern front-end practices.",
+    tech: ["HTML", "CSS", "JavaScript"],
     image:
       "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwxfHx2aWRlbyUyMGVkaXRpbmclMjBzdHVkaW98ZW58MHx8fHwxNzg1MzQ2MDIyfDA&ixlib=rb-4.1.0&q=85",
     demo: "#",
-    github: "#",
+    github: "https://github.com/Rahul2021021191",
   },
 ];
 
 export const CERTIFICATIONS = [
-  { title: "Cisco CyberOps Professional", issuer: "Cisco", icon: "ShieldCheck" },
-  { title: "Foundation of Cloud IoT Edge ML", issuer: "IIT Kanpur", icon: "Cpu" },
-  { title: "Power BI Certification", issuer: "Microsoft", icon: "BarChart3" },
-  { title: "Python Programming Certification", issuer: "Certified", icon: "Terminal" },
+  { title: "Data Analytics with Generative AI", issuer: "INCAPP, Greater Noida · 2026", icon: "Sparkles" },
+  { title: "Deloitte Data Analytics Job Simulation", issuer: "Deloitte, Australia · 2026", icon: "BarChart3" },
+  { title: "Python Programming", issuer: "INCAPP, Greater Noida · 2025", icon: "Terminal" },
+  { title: "Web Development Internship", issuer: "Codsoft · 2023", icon: "Code2" },
 ];
 
 export const EDUCATION = [
   {
     degree: "Bachelor of Computer Applications (BCA)",
-    school: "University",
-    period: "Present",
-    status: "Currently Pursuing",
-    body: "Building a strong foundation in computing, databases, and analytics while pursuing hands-on data projects.",
+    school: "GL Bajaj Institute of Management, Greater Noida",
+    period: "Expected 2027",
+    status: "Currently Pursuing · 75.79%",
+    body: "Building a strong foundation in computing, databases, and analytics while pursuing hands-on data projects in Power BI, SQL, and Python.",
+  },
+  {
+    degree: "Intermediate (Class XII)",
+    school: "St. Joseph's School, Gorakhpur",
+    period: "2020",
+    status: "Completed · 75.6%",
+    body: "Completed senior secondary education with a focus on computing and mathematics.",
+  },
+  {
+    degree: "High School (Class X)",
+    school: "St. Joseph's School, Gorakhpur",
+    period: "2018",
+    status: "Completed · 73.4%",
+    body: "Completed secondary schooling, laying the groundwork for a career in technology.",
   },
 ];
 
@@ -184,7 +206,7 @@ export const ACHIEVEMENTS = [
   { label: "Projects Completed", value: 4, suffix: "+", icon: "FolderKanban" },
   { label: "Certifications", value: 4, suffix: "", icon: "Award" },
   { label: "Internships", value: 2, suffix: "", icon: "Briefcase" },
-  { label: "Technologies Learned", value: 15, suffix: "+", icon: "Layers" },
+  { label: "Technologies Learned", value: 18, suffix: "+", icon: "Layers" },
 ];
 
 export const NAV = [

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { motion, AnimatePresence } from "framer-motion";
-import { Send, Github, Linkedin, Mail, CheckCircle2, Loader2 } from "lucide-react";
+import { Send, Github, Linkedin, Mail, Phone, MapPin, CheckCircle2, Loader2 } from "lucide-react";
 import { PROFILE } from "../../data/portfolio";
 import { Reveal, SectionHeading } from "./Reveal";
 
@@ -71,6 +71,26 @@ export const Contact = () => {
                 </span>
                 {PROFILE.email}
               </a>
+            </Reveal>
+            <Reveal delay={0.14}>
+              <div className="mt-4 space-y-3">
+                <a
+                  href={`tel:${PROFILE.phone.replace(/\s/g, "")}`}
+                  data-testid="contact-phone-link"
+                  className="inline-flex items-center gap-3 text-slate-300 hover:text-cyan-300 transition-colors"
+                >
+                  <span className="h-11 w-11 rounded-2xl flex items-center justify-center bg-white/5 border border-white/10">
+                    <Phone className="h-5 w-5" />
+                  </span>
+                  {PROFILE.phone}
+                </a>
+                <div className="flex items-center gap-3 text-slate-400">
+                  <span className="h-11 w-11 rounded-2xl flex items-center justify-center bg-white/5 border border-white/10">
+                    <MapPin className="h-5 w-5" />
+                  </span>
+                  {PROFILE.location}
+                </div>
+              </div>
             </Reveal>
             <Reveal delay={0.2}>
               <div className="flex gap-3 mt-8">

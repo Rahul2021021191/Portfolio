@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
-import { ABOUT } from "../../data/portfolio";
+import { ABOUT, PROFILE } from "../../data/portfolio";
 import { Reveal } from "./Reveal";
 
 export const About = () => (
@@ -33,6 +33,23 @@ export const About = () => (
             <p className="mt-6 text-base md:text-lg text-slate-400 leading-relaxed">
               I turn messy, raw numbers into clear decisions — one dashboard, query, and automation at a time.
             </p>
+          </Reveal>
+          <Reveal delay={0.24}>
+            <div className="mt-8 relative w-56 md:w-64">
+              <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-blue-500/30 via-purple-500/20 to-cyan-500/30 blur-xl" />
+              <div className="relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-slate-900/40">
+                <img
+                  src={PROFILE.photo}
+                  alt={PROFILE.name}
+                  className="w-full h-72 md:h-80 object-cover object-top grayscale-[0.15] hover:grayscale-0 transition-[filter] duration-500"
+                  data-testid="about-photo"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
+                <span className="absolute bottom-3 left-4 text-sm font-medium text-white">
+                  {PROFILE.name}
+                </span>
+              </div>
+            </div>
           </Reveal>
         </div>
 
